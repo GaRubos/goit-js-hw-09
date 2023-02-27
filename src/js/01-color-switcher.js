@@ -8,7 +8,7 @@ function getRandomHexColor() {
 let intervalId = null;
 
 startButton.addEventListener('click', function () {
-  startButton.disabled = true; // делаем кнопку неактивной
+  startButton.disabled = true;
   intervalId = setInterval(function () {
     document.body.style.backgroundColor = getRandomHexColor();
   }, 1000);
@@ -16,5 +16,5 @@ startButton.addEventListener('click', function () {
 
 stopButton.addEventListener('click', function () {
   clearInterval(intervalId);
-  startButton.disabled = false; // возвращаем кнопку в активное состояние
+  startButton.disabled = false;
 });
